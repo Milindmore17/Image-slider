@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" />
+
+    <style>
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60rem;
+
+        }
+        .image-container{
+            display: block;
+
+            width: 40rem;
+            height: 30rem;
+            background: url("/Milind-Background-slider/img/pic1.jpg") center/cover fixed no-repeat;
+
+        }
+
+        .btn-left {
+             position: absolute;
+             top: 65%;
+             left: 38%;
+             background: transparent;
+             color: rgb(48, 45, 45);
+             transform: translate(-50%, -50%);
+             font-size: 3rem;
+}
+
+.btn-left:hover{
+    color: #777;
+}
+
+.btn-right {
+  position: absolute;
+  top: 65%;
+  right: 38%;
+  background: transparent;
+  color: rgb(48, 45, 45);
+  font-size: 3rem;
+  transform: translate(50%, -50%);
+  /* background-image: url(/Milind-Background-slider/img/); */
+
+}
+
+.btn-right:hover{
+    color: #777;
+}
+
+@media only screen  and (max-width: 768px){
+    .image-container{
+            display: block;
+
+            width: 20rem;
+            height: 10rem;
+            background: url("/Milind-Background-slider/img/pic1.jpg") center/cover fixed no-repeat;
+    }
+
+    .btn-left {
+             position: absolute;
+             top: 60%;
+             left: 15%;
+            
+}
+
+.btn-right {
+  position: absolute;
+  top: 60%;
+  right: 15%;
+
+
+}
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <a href="#" class="btn btn-left"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+            <a href="#" class="btn btn-right"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="/Milind-Background-slider/Js/app.js"></script>
+</body>
+</html>
